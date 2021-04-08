@@ -1,0 +1,169 @@
+.content-wrapper > main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    padding-top: 100px;
+}
+
+/* intro text section */
+
+.content-wrapper > main > .main-intro > h1 {
+    font-size: 45px;
+    font-weight: 400;
+    margin: 10px 0 25px 0;
+}
+
+.hello {
+    display: block;
+    margin-bottom: -16px;
+}
+
+.content-wrapper > main > .main-intro > h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.content-wrapper > main > .main-intro > p {
+    max-width: 641px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    margin: 15px 0;
+}
+
+.content-wrapper > main > .main-intro > .intro-icon-wrapper {
+    display: flex;
+}
+
+.content-wrapper > main > .main-intro > .intro-icon-wrapper > a > .icon:hover {
+    cursor: pointer;
+}
+
+.content-wrapper > main > .main-intro > .intro-icon-wrapper > a > .icon:hover * {
+    fill: var(--purple);
+}
+
+.content-wrapper > main > .main-intro > .intro-icon-wrapper > a > .icon:active {
+    box-shadow: inset -5px -5px 10px rgb(255 255 255 / 5%), inset 5px 5px 15px rgb(0 0 0 / 50%);
+}
+
+.content-wrapper > main > .main-intro > .intro-icon-wrapper > a > .icon:active > * {
+    transform: scale(0.90);
+}
+
+/* skills meter */
+
+.skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 38px;
+}
+
+.skills-wrapper > .skills-meter-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-wrapper > .skills-meter-wrapper > .skill-meter > h3 {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.skills-wrapper > .skills-meter-wrapper > .skill-meter > div {
+    border-radius: 10px;
+    height: 4px;
+}
+
+.skills-wrapper > .skills-meter-wrapper > .skill-meter > .grey-line {
+    width: 400px;
+    background-color: #6A6A6A;
+}
+
+.skills-wrapper > .skills-meter-wrapper > .skill-meter > .purple-line {
+    background-color: var(--purple);
+    margin-top: -4px;
+}
+
+.skills-wrapper > .skills-meter-wrapper > .skill-meter > .purple-line-frontend {
+    width: 90%;
+}
+
+.skills-wrapper > .skills-meter-wrapper > .skill-meter > .purple-line-backend {
+    width: 45%;
+}
+
+.skills-wrapper > .skills-meter-wrapper > .skill-meter > .purple-line-ux {
+    width: 50%;
+}
+
+.skills-wrapper > .skills-meter-wrapper > .skill-meter > .purple-line-cms {
+    width: 25%;
+}
+
+/* knowledge icons */ 
+
+.skills-wrapper > p {
+    margin: 45px 0 25px 0;
+}
+
+.knowledge-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+
+/* media queries */
+
+@media all and (max-width: 1827px) {
+    .content-wrapper > main {
+        justify-content: space-between;
+    }
+}
+
+@media all and (max-width: 1542px) {
+    .content-wrapper > main > .main-intro > p {
+        max-width: 541px;
+    }
+}
+
+@media all and (max-width: 1392px) {
+    .content-wrapper > main {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .content-wrapper > main > .main-intro {
+        margin: 50px 0;
+    }
+
+    .content-wrapper > main > .main-intro > p {
+        max-width: 703px;
+    }
+
+    .skills-wrapper {
+        padding: 0;
+    }
+}
+
+@media all and (max-width: 462px) {
+    .skills-wrapper > .skills-meter-wrapper > .skill-meter > .grey-line {
+        width: 300px;
+    }
+    .content-wrapper > main > .main-intro > h1 {
+        font-size: 39px;
+    }
+}
+
+@media all and (max-width: 362px) {
+    .skills-wrapper > .skills-meter-wrapper > .skill-meter > .grey-line {
+        width: 250px;
+    }
+}

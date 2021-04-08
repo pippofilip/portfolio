@@ -1,0 +1,48 @@
+.page-wrapper > .content-wrapper > main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.page-wrapper > .content-wrapper > main > h1 {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.page-wrapper > .content-wrapper > main > h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.page-wrapper > .content-wrapper > main > a {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.page-wrapper > .content-wrapper > main > a > span:last-child {
+    margin-left: 7px;
+    /* color: var(--purple); */
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.page-wrapper > .content-wrapper > main > a > span:first-child {
+    transition: transform 0.2s linear;
+    margin-top: 5px;
+}
+
+.page-wrapper > .content-wrapper > main > a > span:first-child * {
+    fill: var(--white);
+}
+
+.page-wrapper > .content-wrapper > main > a:hover > span:first-child {
+    transform: translateX(-5px);
+}
+

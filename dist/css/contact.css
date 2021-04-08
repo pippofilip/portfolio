@@ -1,0 +1,223 @@
+/* page struture */
+
+.content-wrapper > div {
+    display: flex;
+    width: 100%;
+    padding: 25px 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content-wrapper > div > main {
+    width: 50%;
+}
+
+.content-wrapper > div > figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;  
+    width: 50%;
+    margin-left: 100px;
+    border: 6px solid var(--purple);
+    border-radius: 16px;
+}
+
+/* page title */
+
+.content-wrapper > div > main > h1 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/* icons */
+
+.content-wrapper > div > main > section {
+    display: flex;
+    margin: 20px 0 25px 0;
+}
+
+.external-link-icon:hover {
+    cursor: pointer;
+}
+
+.external-link-icon:hover * {
+    fill: var(--purple);
+}
+
+.external-link-icon:active {
+    box-shadow: inset -5px -5px 10px rgb(255 255 255 / 5%), inset 5px 5px 15px rgb(0 0 0 / 50%);
+}
+
+.external-link-icon:active > * {
+    transform: scale(0.90);
+}
+
+/* form */
+
+form {
+    width: 100%;
+}
+
+form > .name-email-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+form > .name-email-wrapper > input, form > input, form > textarea  {
+    outline: none;
+    background-color: rgba(35, 35, 35, 0.45);
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset -5px -5px 10px rgb(255 255 255 / 5%), inset 5px 5px 15px rgb(0 0 0 / 25%);
+    color: var(--white);
+    font-size: 16px;
+}
+
+form > .name-email-wrapper > input:focus, form > input:focus, form > textarea:focus {
+    background-color: rgba(97, 83, 204, 0.35);
+}
+
+form > .name-email-wrapper > input::placeholder, form > input::placeholder, form > textarea::placeholder {
+    color: var(--light-grey);
+}
+
+form > .name-email-wrapper > input {
+    width: 50%;
+    margin: 15px 0;
+}
+
+form > .name-email-wrapper > #name {
+    margin-right: 15px;
+}
+
+form > .name-email-wrapper > #email {
+    margin-left: 15px;
+}
+
+form > input, form > textarea {
+    width: 100%;
+    margin: 15px 0;
+    resize: none;
+}
+
+/* button */
+
+.btn {
+    outline: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: var(--light-grey);
+    border: none;
+    padding: 15px 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: -5px -5px 10px rgb(255 255 255 / 5%), 5px 5px 15px rgb(0 0 0 / 50%);
+    margin-top: 10px;
+}
+
+.btn > .arrow {
+    margin-left: 12px;
+}
+
+.btn > .arrow, .button-wrapper > .btn > div  {
+    transition: transform 0.2s ease-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:hover > .arrow {
+    transform: translateX(6px);
+}
+
+.btn > .arrow > .arrow-line {
+    display: flex;
+    background-color: var(--light-grey);
+    border-radius: 4px;
+}
+
+.btn > .arrow > .arrow-top {
+    width: 11px;
+    height: 2px;
+    transform: rotate(45deg) translate(7px, -9px);
+}
+
+.btn > .arrow > .arrow-stick {
+    width: 21px;
+    height: 2px;
+}
+
+.btn > .arrow > .arrow-bottom {
+    width: 11px;
+    height: 2px;
+    transform: rotate(136deg) translate(-7px, -9px);
+}
+
+.btn:active, .btn:focus {
+    box-shadow: inset -5px -5px 10px rgb(255 255 255 / 5%), inset 5px 5px 15px rgb(0 0 0 / 50%);
+}
+
+.btn:active > div, .btn:focus > div {
+    transform: scale(0.95);
+}
+
+.btn:active > .arrow, .btn:focus > .arrow {
+    transform: scale(0.9);
+}
+
+/* map */
+
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+
+.content-wrapper > div > figure > #map {
+    border-radius: 11px;
+    width: 100%;
+    height: 100%;
+}
+
+.netlify-captcha {
+    margin: 10px 0 23px 0;
+}
+
+@media all and (max-width: 1320px) {
+    .content-wrapper > div {
+        flex-direction: column;
+    }
+
+    .content-wrapper > div > main, .content-wrapper > div > figure {
+        width: 100% ;
+    }
+
+    .content-wrapper > div > figure {
+        margin: 100px 0 0 0;
+    }
+}
+
+
+@media all and (max-width: 550px) {
+    form > .name-email-wrapper {
+        flex-direction: column;
+    }
+
+    form > .name-email-wrapper > #name, form > .name-email-wrapper > #email {
+        margin: 15px 0;
+        width: 100%;
+    }
+
+    .content-wrapper > div > figure {
+        height: 320px;
+    }
+}
+
+@media all and (max-width: 375px) {
+    .content-wrapper > .work-page-info > h1 {
+        font-size: 43px;
+    }
+}
