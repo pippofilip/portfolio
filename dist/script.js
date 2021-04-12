@@ -12,7 +12,7 @@ hamburgerIcon.addEventListener('click', () => {
     hamburgerIcon.classList.toggle('change');
     mobileNav.classList.toggle('show');
     document.body.classList.toggle('overflow');
-    pageWrapper.classList.toggle('lock-screen');
+    document.body.classList.toggle('lock-screen');
 })
 
 // add current year in footer
