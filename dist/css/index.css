@@ -106,6 +106,18 @@
     font-weight: 500;
 }
 
+.card-content .see-more-skills {
+    text-align: center;
+    margin-right: 0;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.see-more-skills > a {
+    color: var(--purple);;
+}
+
 /* button */
 
 .button-wrapper > .btn {
